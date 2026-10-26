@@ -1,0 +1,26 @@
+{
+  "name": "alfred",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "alfred": "./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "eval": "node evals/run.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@ai-sdk/openai": "^4.0.102",
+    "ai": "^7.0.153",
+    "ink": "^8.0.0",
+    "ink-spinner": "^5.0.0",
+    "ink-text-input": "^6.0.0",
+    "react": "^19.3.1",
+    "zod": "^4.6.7"
+  }
+}
