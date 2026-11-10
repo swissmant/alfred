@@ -1,5 +1,13 @@
 import { getTime } from "./getTime.js";
 
-export const tools = {
-	getTime,
+import { getEmail } from "./email/getEmail.js";
+
+export const utilityTools = {
+	getTime
 };
+
+export const emailTools = {
+	getEmail
+};
+
+export const tools = { ...utilityTools, ...emailTools };

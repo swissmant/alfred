@@ -4,9 +4,6 @@ import { openai } from "@ai-sdk/openai";
 import { tools } from "../tools/index.js";
 
 export async function run() {
-	if (!process.env.OPENAI_API_KEY) {
-		return { skipped: true, reason: "OPENAI_API_KEY not set" };
-	}
 
 	const result = await generateText({
 		model: openai("gpt-4o-mini"),
