@@ -17,6 +17,12 @@ try {
 
 const h = React.createElement;
 
+const BANNER = `    _    _     _____ ____  _____ ____
+   / \\  | |   |  ___|  _ \\| ____|  _ \\
+  / _ \\ | |   | |_  | |_) |  _| | | | |
+ / ___ \\| |___|  _| |  _ <| |___| |_| |
+/_/   \\_\\_____|_|   |_| \\_\\_____|____/ `;
+
 const model = openai("gpt-4o-mini");
 
 function App() {
@@ -66,8 +72,8 @@ function App() {
 	return h(
 		Box,
 		{ flexDirection: "column", paddingX: 1 },
-		h(Text, { bold: true, color: "cyan" }, "Alfred"),
-		h(Text, { dimColor: true }, "Type a message, or /exit to quit."),
+		h(Text, { bold: true, color: "cyan" }, BANNER),
+		h(Text, { dimColor: true }, "How can I improve your day? /exit to quit."),
 		h(Text, null, " "),
 		h(
 			Static,
